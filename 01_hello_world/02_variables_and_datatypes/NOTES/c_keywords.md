@@ -1,11 +1,4 @@
-**Markdown file for all 32 keywords in C**, with:
 
-* ✅ List of all keywords
-* 📄 Meaning/Use of each keyword
-* 📌 Mini examples (where helpful)
-* 🧠 Notes where confusion usually happens
-
----
 
 ## 📄 `c_keywords.md` — All 32 Keywords in C (With Meaning + Notes)
 
