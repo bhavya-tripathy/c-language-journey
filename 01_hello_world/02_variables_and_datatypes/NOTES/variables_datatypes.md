@@ -115,3 +115,4 @@ int main() {
 
 ---
 
+REMEMBER: BOOLEAN AND STRING DATA TYPE DOES NOT EXIST IN C LANGUAGE!(it is the oldest language)
