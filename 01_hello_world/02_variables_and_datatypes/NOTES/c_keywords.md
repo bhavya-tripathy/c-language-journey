@@ -1,3 +1,4 @@
+git pull origin main
 
 
 ## 📄 `c_keywords.md` — All 32 Keywords in C (With Meaning + Notes)
