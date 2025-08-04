@@ -50,7 +50,7 @@ int main() {
     printf("Enter your age: ");
     scanf("%d", &myAge);
 
-    printf("Enter today’s temperature: ");
+    printf("Enter today's temperature: ");
     scanf("%f", &temperature);
 
     printf("Enter the value of pi (up to 10 decimals): ");
