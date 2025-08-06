@@ -1,6 +1,7 @@
 // an intruction is a statement that tells the program to perform a specific action.
 // 1. type declaration instruction
 #include <stdio.h>
+#include <math.h>
 int main() {
     // Declare an integer variable
     int a = 10; // This is a declaration instruction
@@ -17,7 +18,7 @@ int main() {
     x = y = z = 4 ; // This is a valid instruction, assigning 4 to x, y, and z
     
     //2. Arthematic instructions
-
-
-    return 0;
+// a + b , here a and b are operands and + is the operator
+   
+return 0;
 }
