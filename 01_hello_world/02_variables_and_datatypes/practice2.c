@@ -1,70 +1,3 @@
-#include <stdio.h>
-
-int main() {
-    // INTEGER DATA TYPE
-    int myAge = 18;
-    printf("My age is: %d years\n", myAge);
-
-    // FLOAT DATA TYPE
-    float temperature = 36.5f;
-    printf("Body temperature: %.1f°C\n", temperature);
-
-    // DOUBLE DATA TYPE
-    double pi = 3.1415926535;
-    printf("Value of pi: %.10lf\n", pi);
-
-    // CHARACTER DATA TYPE
-    char grade = 'A';
-    printf("Your grade is: %c\n", grade);
-
-    // SIZEOF() OPERATOR
-    printf("\nSize of data types on this system:\n");
-    printf("int: %zu bytes\n", sizeof(int));
-    printf("float: %zu bytes\n", sizeof(float));
-    printf("double: %zu bytes\n", sizeof(double));
-    printf("char: %zu byte\n", sizeof(char));
-
-    return 0;
-}
-
-
-#include <stdio.h>
-
-int main() {
-    //USER INPUT + MEMORY SIZES
-
-    int myage;
-    float temperature;
-    double pi;
-    char grade;
-
-    // User input
-    printf("Enter your age: ");
-    scanf("%d", &myage);
-
-    printf("Enter today's temperature: ");
-    scanf("%f", &temperature);
-
-    printf("Enter the value of pi (up to 10 decimals): ");
-    scanf("%lf", &pi);
-
-    printf("Enter your grade (single character): ");
-    scanf(" %c", &grade); // notice the space before %c
-
-    // Output
-    printf("\nYour age is: %d years\n", myage);
-printf("Today's temperature: %.1f°C\n", temperature);
-printf("Value of pi: %.10lf\n", pi);
-printf("Your grade is: %c\n", grade);
-  
-// Memory sizes
-    printf("\nSize of data types on this system:\n");
-    printf("int: %zu bytes\n", sizeof(int));    
-    printf("float: %zu bytes\n", sizeof(float));
-    printf("double: %zu bytes\n", sizeof(double));
-    printf("char: %zu byte\n", sizeof(char));
-    return 0;
-}
 
 // write a program to calculate the area of a square
 #include <stdio.h>
@@ -80,6 +13,48 @@ int main() {
     return 0;
 }
 
+// write a program to calculate are of a circle
+#include <stdio.h>
+int main() {
+    double radius;
+    
+    printf("Enter the radius of the circle: ");
+    scanf("%lf", &radius);
+    
+    double area = 3.141592653589793 * radius * radius; // Using a more precise value for pi
+    printf("The area of the circle is: %.2lf\n", area);
+    
+    return 0;
+}
 
 
+// write a a program to calculate the perimeter of  a rectangle. take sides a and b from the user
+#include <stdio.h>
+int main() {
+    int a, b;
+    
+    printf("Enter the length of side a: ");
+    scanf("%d", &a);
+    
+    printf("Enter the length of side b: ");
+    scanf("%d", &b);
+    
+    int perimeter = 2 * (a + b);
+    printf("The perimeter of the rectangle is: %d\n", perimeter);
+    
+    return 0;
+}
 
+// take a number n from user and output its cubes (n*n*n)
+#include <stdio.h>
+int main() {
+    int n;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    int cube = n * n * n;
+    printf("The cube of %d is: %d\n", n, cube);
+    
+    return 0;
+}
