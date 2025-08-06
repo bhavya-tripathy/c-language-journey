@@ -66,7 +66,19 @@ printf("Your grade is: %c\n", grade);
     return 0;
 }
 
-
+// write a program to calculate the area of a square
+#include <stdio.h>
+int main() {
+    int side;
+    
+    printf("Enter the length of the side of the square: ");
+    scanf("%d", &side);
+    
+    int area = side * side;
+    printf("The area of the square is: %d", area);
+    
+    return 0;
+}
 
 
 
