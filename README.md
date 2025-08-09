@@ -1,4 +1,4 @@
-````markdown
+
 # 🌱 C Language Journey — Learning C from Scratch
 
 Hi! I'm Bhavya Tripathy, a first-year CS student, and this is my personal journey of **learning the C programming language from the ground up.**
@@ -12,7 +12,7 @@ This repository is where I:
 > 🧠 I'm not an expert — I'm a student learning by doing.  
 > Everything here is raw, real, and fully built from scratch.
 
----
+
 
 ## 📌 About This Repo
 
@@ -24,7 +24,7 @@ Each folder contains:
 
 Everything is beginner-friendly and written to **teach myself**, not just pass exams.
 
----
+
 
 ## 🗂️ Folder Structure
 
@@ -37,7 +37,7 @@ Everything is beginner-friendly and written to **teach myself**, not just pass e
 
 > More folders coming soon: arrays, functions, pointers, memory diagrams...
 
----
+
 
 ## 🧠 Why I'm Doing This
 
@@ -46,7 +46,7 @@ Everything is beginner-friendly and written to **teach myself**, not just pass e
 - 🧰 I want a repo that grows with me — not something copied from tutorials
 - 🚀 I’m building habits that will help me with DSA, systems, and big projects later
 
----
+
 
 ## ⚙️ Tools I'm Using
 
@@ -55,24 +55,6 @@ Everything is beginner-friendly and written to **teach myself**, not just pass e
 - 📘 Notes: Markdown (`.md` files)
 - 🗂️ Version Control: Git + GitHub
 
----
-
-## 🧾 Sample Program Style
-
-```c
-// Example: hello.c
-
-#include <stdio.h>
-
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
-````
-
-> Simple, clean, and always commented.
-
----
 
 ## 🚧 Currently Learning
 
@@ -93,7 +75,7 @@ int main() {
 
 If you're also learning C, feel free to use this as a reference or fork it to build your own version.
 
----
+
 
 ## ✍️ About Me
 
@@ -103,10 +85,8 @@ I’m also a writer, a poet, and a dreamer — working on a novel and a startup 
 🧠 My goals:
 
 * Build a deep understanding of CS fundamentals
-* Land a top placement (₹20 LPA+)
 * Create tools, stories, and software that last
 
----
 
 ## 🌻 Thanks for Visiting
 
