@@ -1,28 +1,25 @@
 
----
-
-````markdown
 # 02️⃣ Variables and Data Types in C
 
----
+
 
 ## 📝 What are Variables?
 
 - Variables are **named memory locations** used to store values in a program.
-- Think of them like **labeled boxes** where you keep your data.
+Each variable has:
+Name → identifier you choose (age, marks)
+Type → what kind of data it stores (int, float, char, etc.)
+Value → the actual data stored
+ 
+ - Think of them like **labeled boxes** where you keep your data.
 
-### 🔧 Syntax:
-```c
-data_type variable_name = value;
-````
+
 
 Example:
-
-```c
 int age = 17;
 float height = 5.6;
 char grade = 'A';
-```
+
 
 ### ✅ Rules for variable names:
 
@@ -30,7 +27,7 @@ char grade = 'A';
 * Can contain letters, numbers, and underscores
 * No spaces or special characters
 
----
+
 
 ## 🔢 Data Types in C
 
@@ -43,11 +40,11 @@ char grade = 'A';
 
 📝 *Note: Sizes can vary between systems.*
 
----
+
 
 ## 💻 Example 1: variables.c
 
-```c
+
 // variables.c
 // Declaring and using variables in C
 
@@ -68,7 +65,7 @@ int main() {
 
     return 0;
 }
-```
+
 
 ### ✅ What you learn:
 
@@ -82,11 +79,35 @@ int main() {
 | %f               | float    |
 | %c               | char     |
 
----
+Example code:
+#include <stdio.h>
+
+int main() {
+    int age;
+    float gpa;
+    char grade;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your GPA: ");
+    scanf("%f", &gpa);
+
+    printf("Enter your grade: ");
+    scanf(" %c", &grade); // Space before %c to avoid newline issues
+
+    printf("\nYou entered:\n");
+    printf("Age: %d\n", age);
+    printf("GPA: %.2f\n", gpa);
+    printf("Grade: %c\n", grade);
+
+    return 0;
+}
+
 
 ## 💻 Example 2: datatypes.c
 
-```c
+
 // datatypes.c
 // Demonstrating data types in C
 
@@ -105,7 +126,7 @@ int main() {
 
     return 0;
 }
-```
+
 
 ### ✅ What you learn:
 
@@ -113,6 +134,6 @@ int main() {
 * `char` for single characters
 * `%lf` for `double` values
 
----
+
 
 REMEMBER: BOOLEAN AND STRING DATA TYPE DOES NOT EXIST IN C LANGUAGE!(it is the oldest language)
