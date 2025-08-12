@@ -1,11 +1,16 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
 int main() {
-    int b ,c ;
-    b = c = 1;
-    int a = b + c;
-    int power = b^c; // Using the power operator
-    printf(" %d\n", power);
-    return 0;
+    
+    int num = 5;
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } else {
+        printf("The number is negative.\n");
+    }
+for(int i = 0; i <= 3; i++) {
+        printf("loop interation %d\n", i);
+    }
 
+
+    return 0;
 }
