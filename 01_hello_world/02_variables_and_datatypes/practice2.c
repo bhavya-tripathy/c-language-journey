@@ -58,3 +58,28 @@ int main() {
     
     return 0;
 }
+
+#include <stdio.h>
+int main() {
+    
+    int num = 5;
+     if (num > 0) {
+        printf("The number is positive.\n");
+    } else if (num < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    printf("The value of num is: %d\n", num);
+    num = 10;       
+    printf("The value of num is now: %d\n", num);
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } else if (num < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    } 
+    return 0;
+}
