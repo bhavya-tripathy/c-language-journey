@@ -52,7 +52,54 @@ switch (choice) {
         break;
     }
 
-    
+    case 4: {
+        int binary,decimal = 0, base = 1, remainder;
+        printf("Enter a binary number: ");
+        scanf("%d", &binary);
+        while (binary > 0) {
+            remainder = binary % 10;
+            decimal = decimal + remainder * base;
+            binary = binary / 10;
+            base = base * 2;
+        }
+        printf("Decimal equivalent: %d\n", decimal);
+        break;
+    }
+    case 5: {
+        int binary, decimal = 0, base = 1, remainder;
+        printf("Enter a binary number: ");
+        scanf("%d", &binary);
+        while (binary > 0) {
+            remainder = binary % 10;
+            decimal = decimal + remainder * base;
+            binary = binary / 10;
+            base = base * 2;
+        }
+        int octal = 0, octalBase = 1;
+        while (decimal > 0) {
+            remainder = decimal % 8;
+            octal = octal + remainder * octalBase;
+            decimal = decimal / 8;
+            octalBase = octalBase * 10;
+        }
+        printf("Octal equivalent: %d\n", octal);
+        break;
+    }
+
+    case 6: {
+        int binary, decimal = 0, base = 1, remainder;
+        printf("enter a binary number: ");
+        scanf("%d", &binary);
+        while (binary > 0) {
+            remainder = binary % 10;
+            decimal = decimal + remainder * base;
+            binary = binary / 10;
+            base = base * 2;
+        }
+        printf("Hexadecimal equivalent: %X\n", decimal);
+    }
+
+
 
     return 0;
 }
