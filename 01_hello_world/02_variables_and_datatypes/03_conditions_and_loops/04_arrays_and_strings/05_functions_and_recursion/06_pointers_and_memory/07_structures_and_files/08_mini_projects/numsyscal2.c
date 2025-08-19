@@ -16,7 +16,7 @@ int main() {
  printf("10. Hexadecimal to Decimal\n");
  printf("11. Hexadecimal to Binary\n");
  printf("12. Hexadecimal to Octal\n");
- printf("Enter your choice (1–12): ");
+printf("Enter your choice (1-12): ");
  scanf("%d", &choice);
 
  switch (choice) {
