@@ -97,9 +97,125 @@ switch (choice) {
             base = base * 2;
         }
         printf("Hexadecimal equivalent: %X\n", decimal);
+
+        break;
+
+    case 7: {
+        int octal, decimal = 0, base = 1, remainder;
+        printf("Enter an octal number: ");
+        scanf("%d", &octal);
+        while (octal > 0) {
+            remainder = octal % 10;
+            decimal = decimal + remainder * base;
+            octal = octal / 10;
+            base = base * 8;
+        }
+        printf("Decimal equivalent: %d\n", decimal);
+        break;
+    case 8: {
+        int octal, decimal = 0, base = 1, remainder;
+        printf("Enter an octal number: ");
+        scanf("%d", &octal);
+        while (octal > 0) {
+            remainder = octal % 10;
+            decimal = decimal + remainder * base;
+            octal = octal / 10;
+            base = base * 8;
+        }
+        int binary = 0, binaryBase = 1;
+        while (decimal > 0) {
+            remainder = decimal % 2;
+            binary = binary + remainder * binaryBase;
+            decimal = decimal / 2;
+            binaryBase = binaryBase * 10;
+        }
+        printf("Binary equivalent: %d\n", binary);
+        break;
+    }    
+    case 9: {
+        int octal, decimal = 0, base = 1, remainder;
+        printf("Enter an octal number: ");
+        scanf("%d", &octal);
+        while (octal > 0) {
+            remainder = octal % 10;
+            decimal = decimal + remainder * base;
+            octal = octal / 10;
+            base = base * 8;
+        }
+        printf("Hexadecimal equivalent: %X\n", decimal);
+        break;
     }
-
-
-
+    case 10: {
+        char hex[20];
+        int decimal = 0, base = 1, i;
+        printf("Enter a hexadecimal number: ");
+        scanf("%s", hex);
+        for (i = strlen(hex) - 1; i >= 0; i--) {
+            if (hex[i] >= '0' && hex[i] <= '9') {
+                decimal += (hex[i] - '0') * base;
+            } else if (hex[i] >= 'A' && hex[i] <= 'F') {
+                decimal += (hex[i] - 'A' + 10) * base;
+            } else if (hex[i] >= 'a' && hex[i] <= 'f') {
+                decimal += (hex[i] - 'a' + 10) * base;
+            }
+            base *= 16;
+        }
+        printf("Decimal equivalent: %d\n", decimal);
+        break;
+    }
+    case 11: {
+        char hex[20];
+        int decimal = 0, base = 1, i;
+        printf("Enter a hexadecimal number: ");
+        scanf("%s", hex);
+        for (i = strlen(hex) - 1; i >= 0; i--) {
+            if (hex[i] >= '0' && hex[i] <= '9') {
+                decimal += (hex[i] - '0') * base;
+            } else if (hex[i] >= 'A' && hex[i] <= 'F') {
+                decimal += (hex[i] - 'A' + 10) * base;
+            } else if (hex[i] >= 'a' && hex[i] <= 'f') {
+                decimal += (hex[i] - 'a' + 10) * base;
+            }
+            base *= 16;
+        }
+        int binary = 0, binaryBase = 1, remainder;
+        while (decimal > 0) {
+            remainder = decimal % 2;
+            binary = binary + remainder * binaryBase;
+            decimal = decimal / 2;
+            binaryBase = binaryBase * 10;
+        }
+        printf("Binary equivalent: %d\n", binary);
+        break;
+    }
+    case 12: {
+        char hex[20];
+        int decimal = 0, base = 1, i;
+        printf("Enter a hexadecimal number: ");
+        scanf("%s", hex);
+        for (i = strlen(hex) - 1; i >= 0; i--) {
+            if (hex[i] >= '0' && hex[i] <= '9') {
+                decimal += (hex[i] - '0') * base;
+            } else if (hex[i] >= 'A' && hex[i] <= 'F') {
+                decimal += (hex[i] - 'A' + 10) * base;
+            } else if (hex[i] >= 'a' && hex[i] <= 'f') {
+                decimal += (hex[i] - 'a' + 10) * base;
+            }
+            base *= 16;
+        }
+        int octal = 0, octalBase = 1, remainder;
+        while (decimal > 0) {
+            remainder = decimal % 8;
+            octal = octal + remainder * octalBase;
+            decimal = decimal / 8;
+            octalBase = octalBase * 10;
+        }
+        printf("Octal equivalent: %d\n", octal);
+        break;
+    }
+    default:
+        printf("Invalid choice!\n");
+        break;
+    }
     return 0;
-}
+}}
